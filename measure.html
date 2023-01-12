@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Face Health Monitoring</title>
-  <script defer src="measure.bundle.js?2096ffa6970cb021b059"></script></head>
+  <script defer src="measure.bundle.js?fbe20c322d11646598da"></script></head>
   <body>
     <div id="MeasurePage">
       <section id="Header">
@@ -32,10 +32,11 @@
         <video
           id="input_video"
           class="input_video"
-          autoplay="true"
           muted="true"
           width="1280px"
           height="640px"
+          autoplay
+          playsinline
         ></video>
         <canvas class="output_canvas" width="640px" height="480px"></canvas>
         <canvas class="output_canvas2" width="640px" height="480px"></canvas>
@@ -45,7 +46,6 @@
           width="640px"
           height="480px"
         ></canvas>
-        <div class="red"></div>
         <div class="progress-bar"></div>
       </section>
       <section class="loading-wrapper"></section>
