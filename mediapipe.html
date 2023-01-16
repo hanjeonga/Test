@@ -18,19 +18,21 @@
       src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"
       crossorigin="anonymous"
     ></script>
-  <script defer src="mediapipe.bundle.js?a7fa4a3fb3fdd7751318"></script></head>
+  <script defer src="mediapipe.bundle.js?bb0fbcd7f8d4bdafdc09"></script></head>
 
   <body>
     <div id="MeasurePage">
       <section id="Header">
         <a href="./age.html" class="prev"> </a>
         <h1>Information</h1>
+        <button class="stop">STOP</button>
       </section>
       <section id="Content">
         <video
           id="input_video"
           class="input_video"
-          autoplay="true"
+          autoplay
+          playsinline
           muted="true"
           width="1280px"
           height="720px"
@@ -75,6 +77,6 @@
     </div>
     <div class="control-panel"></div>
 
-    <script type="module" src="./measuretest.js"></script>
+    <script type="module" src="./mediapipetesst.js"></script>
   </body>
 </html>
