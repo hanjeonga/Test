@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"
-      crossorigin="anonymous"
-    ></script>
-  <script defer src="sample.bundle.js?27bcbe8610b1557da5fe"></script></head>
+    <title>I see you! | Face Mesh</title>
 
-  <body>
-    <div class="container">
-      <video class="input_video"></video>
-      <canvas class="output_canvas" width="1280px" height="720px"></canvas>
-    </div>
-    <script type="module" src="./sample.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+    <!-- Javascript imports -->
+    <script src="./sample.js"></script>
+    <script>
+      main();
+    </script>
+  <script defer src="sample.bundle.js?96413af7676e17513d8a"></script></head>
+
+  <body style="background-color: aliceblue; text-align: center">
+    <video
+      autoplay
+      muted
+      playsinline
+      hidden
+      id="video"
+      style="width: auto; height: auto"
+    ></video>
+    <canvas id="facecanvas"></canvas>
   </body>
 </html>
